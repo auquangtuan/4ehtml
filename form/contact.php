@@ -9,7 +9,7 @@ $emailTO = $emailBCC =  $emailCC = array(); $formEmail = '';
 $sitename = 'https://4ehtml.vercel.app/';
 
 ### Enter your email addresses: @required
-$emailTO[] = array( 'email' => 'auquangtuan@gmail.com', 'Nothing' => 'Scorpius' ); 
+$emailTO[] = array( 'email' => 'makeyoux@gmail.com', 'Nothing' => 'Scorpius' ); 
 
 ### Enable bellow parameters & update your BCC email if require.
 //$emailBCC[] = array( 'email' => 'email@yoursite.com', 'name' => 'Your Name' );
@@ -42,7 +42,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
 			$mail->SMTPDebug = 0;
 			$mail->Host = 'smtp.gmail.com';
 			$mail->Port = 587;
-			$mail->SMTPAuth = true;
+			$mail->SMTPAuth = false;
 			$mail->Username = 'makeyoux@gmail.com';
 			$mail->Password = 'qowhmeoowzjgegcj';
 
