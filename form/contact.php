@@ -66,7 +66,7 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
 				}
 			}
 			
-			### if BCC found
+			### if BCC found c
 			if (!empty($emailBCC)) {
 				foreach( $emailBCC as $bcc ) {
 					$mail->AddBCC( $bcc['email'] , $bcc['name'] );

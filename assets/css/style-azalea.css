@@ -1607,7 +1607,12 @@ h6,
 }
 
 .bg-theme {
+  background-image: url(/images/bgv.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
   background-color: #D8F6F6;
+  z-index: 10;
 }
 
 .bg-theme.current {
@@ -19556,7 +19561,7 @@ hr+.nk-block {
   font-size: 20px;
   text-transform: uppercase;
   transition: all .3s ease-in-out;
-  color: #0477FF;
+  color: #000000;
 }
 
 .has-sub>a {
