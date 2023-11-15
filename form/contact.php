@@ -6,10 +6,10 @@ $mail = new PHPMailer();
 $emailTO = $emailBCC =  $emailCC = array(); $formEmail = '';
 
 ### Enter Your Sitename 
-$sitename = 'Your Site Name';
+$sitename = 'https://4ehtml.vercel.app/';
 
 ### Enter your email addresses: @required
-$emailTO[] = array( 'email' => 'email@yoursite.com', 'name' => 'Your Name' ); 
+$emailTO[] = array( 'email' => 'auquangtuan@gmail.com', 'Nothing' => 'Scorpius' ); 
 
 ### Enable bellow parameters & update your BCC email if require.
 //$emailBCC[] = array( 'email' => 'email@yoursite.com', 'name' => 'Your Name' );
@@ -38,13 +38,13 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
 		
 		if ($honeypot == '' && !(empty($emailTO))) {
 			### If you want use SMTP 
-			// $mail->isSMTP();
-			// $mail->SMTPDebug = 0;
-			// $mail->Host = 'smtp_host';
-			// $mail->Port = 587;
-			// $mail->SMTPAuth = true;
-			// $mail->Username = 'smtp_username';
-			// $mail->Password = 'smtp_password';
+			$mail->isSMTP();
+			$mail->SMTPDebug = 0;
+			$mail->Host = 'smtp.gmail.com';
+			$mail->Port = 587;
+			$mail->SMTPAuth = true;
+			$mail->Username = 'makeyoux@gmail.com';
+			$mail->Password = 'qowhmeoowzjgegcj';
 
 			### Regular email configure
 			$mail->IsHTML(true);
