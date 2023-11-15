@@ -38,13 +38,13 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST') {
 		
 		if ($honeypot == '' && !(empty($emailTO))) {
 			### If you want use SMTP 
-			$mail->isSMTP();
-			$mail->SMTPDebug = 0;
-			$mail->Host = 'smtp.gmail.com';
-			$mail->Port = 587;
-			$mail->SMTPAuth = false;
-			$mail->Username = 'makeyoux@gmail.com';
-			$mail->Password = 'qowhmeoowzjgegcj';
+			// $mail->isSMTP();
+			// $mail->SMTPDebug = 0;
+			// $mail->Host = 'smtp.gmail.com';
+			// $mail->Port = 587;
+			// $mail->SMTPAuth = true;
+			// $mail->Username = 'makeyoux@gmail.com';
+			// $mail->Password = 'qowhmeoowzjgegcj';
 
 			### Regular email configure
 			$mail->IsHTML(true);
